@@ -1,0 +1,461 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Frenzy </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+    .head{
+      font-family: 'Dancing Script', cursive; 
+      margin-left:250px;
+      
+    } 
+    *{
+      margin:0;
+      padding:0;
+     
+      
+    }
+  .container{
+    text-align: center;
+  
+  }  
+
+.row{
+padding-top: 50px;
+
+
+
+}
+    nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+
+}
+
+
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding:8px 12px ;
+  position: relative;
+  color: black;
+  
+} 
+a{
+  text-decoration:none;
+  color:#ff3366;
+  font-weight:bold;
+}
+.nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background:#f44336 ;
+  display:block;
+  margin: auto;
+  transition: 0s;
+  color: black;
+} 
+ .nav-links ul li:hover:after{
+  width:100%;
+
+  
+} 
+.nav-links{
+  flex:1;
+  text-align: right;
+}
+
+@media(max-width:700px){
+  .nav-links ul li{
+      display: block;
+  }
+  .nav-links{
+      position: absolute;
+      background: #070403;
+      height: 100vh;
+      width: 200px;
+      top:0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+     
+  } 
+   
+</style>
+
+<body>
+  <header>
+  <section class="header" style="background-image:linear-gradient(to bottom,pink,white);">
+    <nav>
+        <div class="nav-links">
+          <ul>
+                
+                <li><a class="nav-link" href="{% url 'women' %}">WOMEN</a></li>
+                <li><a class="nav-link" href="{% url 'men' %}">MEN</a></li>
+                <li><a class="nav-link" href="{% url 'kids' %}">KIDS</a></li>
+                <li><a class="nav-link" href="{% url 'userprofiles' %}">PROFILE</a></li>
+                <li> <a class="nav-link" href="{% url 'sendingotp' %}">BOOKEDVIEW</a></li>
+                <li><a class="nav-link" href="{% url 'login' %}">Back</a></li>
+
+            </ul>
+        </div>
+        </nav>
+        <div class="main" style="height:200px;width:100%;">
+        <h1 class="sc"><pre class="head">
+                  LOVE 
+                           IN 
+                                STYLE
+            </pre></h1><div>
+      
+</section>
+      
+     
+  </header>
+
+  <br><br>
+  <section class="course">
+    <h2 style="text-align:center;font-weight:bold;font-size:40px;">Dress Types</h2>
+      <h3 style="text-align:center;">Top rated Traditional</h3><br><br><br>
+      
+    <div class="container">
+      <h2>Mens Wear</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="image-wrapper1">
+            <img src="./l12.jpg" alt="Gym Image" >
+          </div>
+          <div class="course-col">
+            <h3>Traditional wear</h3>
+            <p>Traditional Wear which can be wore on family members wedding or your own wedding and make yourself beautiful than other's.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="image-wrapper1">
+            <img src="./l12.jpg" alt="Gym Image" >
+          </div>
+          <div class="course-col">
+            <h3>Formal wear</h3>
+            <p>Traditional Wear which can be wore on family members wedding or your own wedding and make yourself beautiful than other's.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="image-wrapper1">
+            <img src="./l12.jpg" alt="Gym Image">
+          </div>
+          <div class="course-col">
+          
+            <h3>PartyWear</h3>
+            <p>Party Wear is where you can Wear any party like birthaday or new year party or other.Make yourself attracted to Others.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="image-wrapper1">
+            <img src="./l12.jpg" alt="Gym Image">
+          </div>
+          <div class="course-col">
+           
+            <h3>Dailywear</h3>
+            <p>Party Wear is where you can Wear any party like birthaday or new year party or other.Make yourself attracted to Others.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="image-wrapper1">
+            <img src="{% static 'l9.jpg' %}" alt="Gym Image">
+          </div>
+            <div class="course-col">
+             
+              <h3>Weddingwear</h3>
+              <p>Party Wear is where you can Wear any party like birthaday or new year party or other.Make yourself attracted to Others.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+          <div class="image-wrapper1">
+            <img src="./l12.jpg" alt="Gym Image" >
+          </div>
+          <div class="course-col">
+            <h3>Others</h3>
+            <p>Traditional Wear which can be wore on family members wedding or your own wedding and make yourself beautiful than other's.
+            </p>
+          </div>
+        </div>
+          
+      </div>
+    </div>
+    
+    <br><br>
+</section>
+
+  
+<br><br><br><br>
+  
+
+  <section class="cta"> 
+    <div class="container" >
+      <p style="text-align:center;font-size:40px;font-weight:bold;">FOR MORE  INFORMATION</p>
+      <h3 style="text-align:center;"><a href="#" class="btn btn-primary">CONTACT US</a></h3>
+    </div>
+  </section>
+
+
+  
+</body>
+</html>
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Fashion Frenzy </title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   
+   <style>
+     @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+     .head{
+       font-family: 'Dancing Script', cursive; 
+       margin-left:250px;
+       
+     } 
+     *{
+       margin:0;
+       padding:0;
+      
+       
+     }
+   .container{
+     text-align: center;
+   
+   }  
+ 
+ .row{
+ padding-top: 50px;
+ 
+ 
+ 
+ }
+     nav{
+     display: flex;
+     padding: 0% 24%;
+     justify-content: space-between;
+     align-items: center;
+     color: black;
+     position: fixed;
+     background-color: #cca5af;
+ 
+ }
+ 
+ 
+ .nav-links ul li{
+   list-style: none;
+   display: inline-block;
+   padding:8px 12px ;
+   position: relative;
+   color: black;
+   
+ } 
+ a{
+   text-decoration:none;
+   color:#ff3366;
+   font-weight:bold;
+ }
+ .nav-links ul li::after{
+   content: '';
+   width: 0%;
+   height: 2px;
+   background:#f44336 ;
+   display:block;
+   margin: auto;
+   transition: 0s;
+   color: black;
+ } 
+  .nav-links ul li:hover:after{
+   width:100%;
+ 
+   
+ } 
+ .nav-links{
+   flex:1;
+   text-align: right;
+ }
+ .col-md-4{
+  padding-left:0px;
+}
+.types-col:hover{
+  box-shadow:0 0 20px 0px rgba(0,0,0,0.2) ;
+  transition: 5s;
+}
+ .types-col{
+  flex-basis: 100%;
+  background:#f24973;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding:30px 12px ;
+  box-sizing: border-box;
+  color: black;
+  width: 305px;
+  margin-left: 30px;
+ 
+}
+
+
+.image-wrapper1 img{
+  width: 70%;
+  height: 380px;
+  padding:1px;
+}
+.main{
+    padding-top: 100px;
+}
+ @media(max-width:700px){
+   .nav-links ul li{
+       display: block;
+   }
+   .nav-links{
+       position: absolute;
+       background: #070403;
+       height: 100vh;
+       width: 200px;
+       top:0;
+       right: -200px;
+       text-align: left;
+       z-index: 2;
+      
+   } 
+    
+ </style>
+ 
+ <body>
+   <header>
+   <section class="header" style="background-image:linear-gradient(to bottom,pink,white);">
+     <nav>
+         <div class="nav-links">
+           <ul>
+                 
+                 <li><a class="nav-link" href="{% url 'women' %}">WOMEN</a></li>
+                 <li><a class="nav-link" href="{% url 'men' %}">MEN</a></li>
+                 <li><a class="nav-link" href="{% url 'kids' %}">KIDS</a></li>
+                 <li><a class="nav-link" href="{% url 'userprofiles' %}">PROFILE</a></li>
+                 <li> <a class="nav-link" href="{% url 'sendingotp' %}">BOOKEDVIEW</a></li>
+                 <li><a class="nav-link" href="{% url 'login' %}">Back</a></li>
+ 
+             </ul>
+         </div>
+         </nav>
+         <div class="main" style="height:200px;width:100%;">
+         <h1 class="sc"><pre class="head">
+                   LOVE 
+                            IN 
+                                 STYLE
+             </pre></h1><div>
+       
+ </section>
+       
+      
+   </header>
+ 
+   <br><br>
+   <section class="course">
+     <h2 style="text-align:center;font-weight:bold;font-size:40px;">Dress Types</h2>
+       <h3 style="text-align:center;">Top rated Traditional</h3><br><br><br>
+       
+     <div class="container">
+       <h2>Mens Wear</h2>
+       <div class="row">
+         <div class="col-md-4">
+           <div class="image-wrapper1">
+             <img src="./l12.jpg" alt="Gym Image" >
+           </div>
+           <div class="types-col">
+             <h3>Traditional wear</h3>
+             <p>Traditional Wear which can be wore on family members wedding or your own wedding and make yourself beautiful than other's.
+             </p>
+           </div>
+         </div>
+         <div class="col-md-4">
+           <div class="image-wrapper1">
+             <img src="./l12.jpg" alt="Gym Image" >
+           </div>
+           <div class="types-col">
+             <h3>Formal wear</h3>
+             <p>Traditional Wear which can be wore on family members wedding or your own wedding and make yourself beautiful than other's.
+             </p>
+           </div>
+         </div>
+         <div class="col-md-4">
+           <div class="image-wrapper1">
+             <img src="./l12.jpg" alt="Gym Image">
+           </div>
+           <div class="types-col">
+           
+             <h3>PartyWear</h3>
+             <p>Party Wear is where you can Wear any party like birthaday or new year party or other.Make yourself attracted to Others.
+             </p>
+           </div>
+         </div>
+         <div class="col-md-4">
+           <div class="image-wrapper1">
+             <img src="./l12.jpg" alt="Gym Image">
+           </div>
+           <div class="types-col">
+            
+             <h3>Dailywear</h3>
+             <p>Party Wear is where you can Wear any party like birthaday or new year party or other.Make yourself attracted to Others.</p>
+           </div>
+         </div>
+         <div class="col-md-4">
+           <div class="image-wrapper1">
+             <img src="./l12.jpg" alt="Gym Image">
+           </div>
+             <div class="types-col">
+              
+               <h3>Weddingwear</h3>
+               <p>Party Wear is where you can Wear any party like birthaday or new year party or other.Make yourself attracted to Others.</p>
+             </div>
+           </div>
+           <div class="col-md-4">
+           <div class="image-wrapper1">
+             <img src="./l12.jpg" alt="Gym Image" >
+           </div>
+           <div class="types-col">
+             <h3>Others</h3>
+             <p>Traditional Wear which can be wore on family members wedding or your own wedding and make yourself beautiful than other's.
+             </p>
+           </div>
+         </div>
+           
+       </div>
+     </div>
+     
+     <br><br>
+ </section>
+ 
+   
+ <br><br><br><br>
+   
+ 
+   <section class="cta"> 
+     <div class="container" >
+       <p style="text-align:center;font-size:40px;font-weight:bold;">FOR MORE  INFORMATION</p>
+       <h3 style="text-align:center;"><a href="#" class="btn btn-primary">CONTACT US</a></h3>
+     </div>
+   </section>
+ 
+ 
+   
+ </body>
+ </html>
+ 
+ 
